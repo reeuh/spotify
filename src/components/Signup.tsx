@@ -1,3 +1,4 @@
+import { BiHide } from "react-icons/bi";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
 
 const Signup = () => {
@@ -33,10 +34,14 @@ const Signup = () => {
           placeholder="Username or Email"
           className="border py-2 rounded-full w-full pl-5"
         />
-        <input
-          placeholder="Password"
-          className="border py-2 rounded-full w-full pl-5"
-        />
+        <div className="relative w-full">
+          <input
+            type="password"
+            placeholder="Password"
+            className="border py-2 rounded-full w-full pl-5 pr-10"
+          />
+          <BiHide className="absolute right-3 top-1/2 transform -translate-y-1/2 cursor-pointer" />
+        </div>
       </div>
 
       {/* Remember me */}
@@ -48,14 +53,22 @@ const Signup = () => {
       </div>
 
       {/* Login button */}
-      <button className="px-10 py-2 rounded-full bg-[#1DB954] font-semibold text-black">
+      <button className="px-10 py-2 rounded-full bg-[#1DB954] font-semibold text-black hover:border border-white hover:bg-none">
         Login
       </button>
 
       {/* Forgot password */}
-      <a href="" className="text-sm">
+      <a href="" className="text-sm hover:border-b border-[#1DB954] hover:bg-none hover:text-[#1DB954]">
         Forgot your password?
       </a>
+
+      {/* Signup */}
+      <p className="text-sm">
+        Don't have an account?{" "}
+        <a href="" className="text-white hover:text-[#1DB954]">
+          <u>Sign up for Spotify.</u>
+        </a>
+      </p>
     </div>
   );
 };
