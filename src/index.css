@@ -4,7 +4,7 @@
 
 @theme {
   --color-main: #1A2423;
-  --color-primaryFill: #FAFAFA;
+  --tw-color-primaryFill: #FAFAFA;
   --breakpoint-sm: 640px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 1024px;
@@ -20,7 +20,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  color: var(--primary);
+  color: var(--tw-color-primaryFill);
   overflow-x: hidden;
   overflow-y: auto;
   background-color: var(--primaryFill);
@@ -30,7 +30,6 @@ body {
 html > body[data-scroll-locked] {
   overflow: visible !important;
   margin-right: 0 !important;
-  height: 100%;
 }
 
 * {
