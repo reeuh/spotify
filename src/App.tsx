@@ -6,14 +6,14 @@ import {
   Navigate,
 } from "react-router-dom";
 import Login from "./Pages/Login";
-import Signup from "./components/Signup";
+import SignUp from "./Pages/SignUp";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Navigate to="/signup" />} />
         <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<Signup/>} />
+        <Route path="/signup" element={<SignUp/>} />
       </Routes>
     </Router>
   );

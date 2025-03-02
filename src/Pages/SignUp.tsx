@@ -4,9 +4,9 @@ const SignUp = () => {
   return (
     <div
       id="signup"
-      className="w-full h-screen flex flex-col justify-center items-center bg-[#121212] text-white"
+      className="w-full max-w-[1440px] !mx-auto flex justify-center items-center h-full"
     >
-      <div className="w-[305555555rem] flex flex-col justify-center items-center gap-5 bg-black rounded-2xl px-10 py-16">
+      <div className="w-[30rem] flex flex-col justify-center items-center gap-5 bg-black rounded-2xl px-10 py-16">
         <div className="flex justify-center items-center gap-2 mb-5">
           <FaSpotify size={28} />
           <p className="text-2xl text- font-bold">Sign up to start listening</p>
@@ -59,7 +59,7 @@ const SignUp = () => {
         {/* Back to Login */}
         <div className="w-full flex justify-center items-center gap-2">
           <p>Already have an account?</p>
-          <a href="" className="text-[#1DB954] hover:underline">
+          <a href="/login" className="text-[#1DB954] hover:underline">
             Log in here.
           </a>
         </div>
